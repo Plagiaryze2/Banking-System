@@ -47,133 +47,139 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPanel.cs">
+    <Compile Include="Admin\AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AtmInfo.cs">
+    <Compile Include="ATM\AtmInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AtmInfo.Designer.cs">
+    <Compile Include="ATM\AtmInfo.Designer.cs">
       <DependentUpon>AtmInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="BankUser.cs" />
-    <Compile Include="CurrencyExchangeForm.cs">
+    <Compile Include="Models\BankUser.cs" />
+    <Compile Include="Client\CurrencyExchangeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CurrencyExchangeForm.Designer.cs">
+    <Compile Include="Client\CurrencyExchangeForm.Designer.cs">
       <DependentUpon>CurrencyExchangeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Deposit.cs">
+    <Compile Include="Client\Deposit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Deposit.Designer.cs">
+    <Compile Include="Client\Deposit.Designer.cs">
       <DependentUpon>Deposit.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepositWithdraw.cs">
+    <Compile Include="Client\DepositWithdraw.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepositWithdraw.Designer.cs" />
-    <Compile Include="DeposMenu.cs">
+    <Compile Include="Client\DepositWithdraw.Designer.cs">
+      <DependentUpon>DepositWithdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History\DeposMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeposMenu.Designer.cs">
+    <Compile Include="History\DeposMenu.Designer.cs">
       <DependentUpon>DeposMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Authentication\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Authentication\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClientMenu.cs">
+    <Compile Include="Client\ClientMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClientMenu.Designer.cs">
+    <Compile Include="Client\ClientMenu.Designer.cs">
       <DependentUpon>ClientMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FundTransfer.cs">
+    <Compile Include="Client\FundTransfer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FundTransfer.Designer.cs">
+    <Compile Include="Client\FundTransfer.Designer.cs">
       <DependentUpon>FundTransfer.cs</DependentUpon>
     </Compile>
-    <Compile Include="InterestInfo.cs">
+    <Compile Include="Client\InterestInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InterestInfo.Designer.cs">
+    <Compile Include="Client\InterestInfo.Designer.cs">
       <DependentUpon>InterestInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoanInfo.cs">
+    <Compile Include="Loans\LoanInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoanInfo.Designer.cs">
+    <Compile Include="Loans\LoanInfo.Designer.cs">
       <DependentUpon>LoanInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewCard.cs">
+    <Compile Include="ATM\NewCard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewCard.Designer.cs">
+    <Compile Include="ATM\NewCard.Designer.cs">
       <DependentUpon>NewCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="PayLoan.cs">
+    <Compile Include="Loans\PayLoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PayLoan.Designer.cs">
+    <Compile Include="Loans\PayLoan.Designer.cs">
       <DependentUpon>PayLoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signuppage.cs">
+    <Compile Include="Authentication\Signuppage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Signuppage.Designer.cs">
+    <Compile Include="Authentication\Signuppage.Designer.cs">
       <DependentUpon>Signuppage.cs</DependentUpon>
     </Compile>
-    <Compile Include="TakeLoan.cs">
+    <Compile Include="Loans\TakeLoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TakeLoan.Designer.cs">
+    <Compile Include="Loans\TakeLoan.Designer.cs">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="TransactionInfo.cs">
+    <Compile Include="Client\TransactionInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TransactionInfo.Designer.cs">
+    <Compile Include="Client\TransactionInfo.Designer.cs">
       <DependentUpon>TransactionInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Withdraw.cs">
+    <Compile Include="Client\Withdraw.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Withdraw.Designer.cs" />
-    <Compile Include="Withdrawl.cs">
+    <Compile Include="Client\Withdraw.Designer.cs">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History\Withdrawl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Withdrawl.Designer.cs">
+    <Compile Include="History\Withdrawl.Designer.cs">
       <DependentUpon>Withdrawl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminPanel.resx">
+    <EmbeddedResource Include="Admin\AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientMenu.resx">
+    <EmbeddedResource Include="Client\ClientMenu.resx">
       <DependentUpon>ClientMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CurrencyExchangeForm.resx">
+    <EmbeddedResource Include="Client\CurrencyExchangeForm.resx">
       <DependentUpon>CurrencyExchangeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepositWithdraw.resx" />
-    <EmbeddedResource Include="DeposMenu.resx">
+    <EmbeddedResource Include="Client\DepositWithdraw.resx">
+      <DependentUpon>DepositWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History\DeposMenu.resx">
       <DependentUpon>DeposMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Authentication\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FundTransfer.resx">
+    <EmbeddedResource Include="Client\FundTransfer.resx">
       <DependentUpon>FundTransfer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoanInfo.resx">
+    <EmbeddedResource Include="Loans\LoanInfo.resx">
       <DependentUpon>LoanInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PayLoan.resx">
+    <EmbeddedResource Include="Loans\PayLoan.resx">
       <DependentUpon>PayLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -186,17 +192,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Signuppage.resx">
+    <EmbeddedResource Include="Authentication\Signuppage.resx">
       <DependentUpon>Signuppage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TakeLoan.resx">
+    <EmbeddedResource Include="Loans\TakeLoan.resx">
       <DependentUpon>TakeLoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TransactionInfo.resx">
+    <EmbeddedResource Include="Client\TransactionInfo.resx">
       <DependentUpon>TransactionInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Withdraw.resx" />
-    <EmbeddedResource Include="Withdrawl.resx">
+    <EmbeddedResource Include="Client\Withdraw.resx">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History\Withdrawl.resx">
       <DependentUpon>Withdrawl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
