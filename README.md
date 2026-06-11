@@ -107,7 +107,7 @@ Add screenshots here:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/FAST-NU-Banking-System.git
+   git clone https://github.com/Plagiaryze2/Banking-System.git
    ```
 
 2. **Open the solution**
